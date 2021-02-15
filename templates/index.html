@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                HTML Table Lesson
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Objectives:</h4>
+                <p class="card-text">Get comfortable passing information from the route to the template.<br>
+                    Get very comfortable iterating through a list of dictionaries to generate a html output.</p>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Full Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {% for i in range (0)%}
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</body>
+
+</html>
